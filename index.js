@@ -3,10 +3,10 @@ var router = express.Router();
 
 router.get('/', async (req, res) => {
     res.status(200).json({
-        name   : 'API', 
+        name   : 'Stored files', 
         version: '1.0', 
         status : 200, 
-        message: 'Ici vous stockez vos fichiers!'
+        message: 'API to Store Your files!'
     });
 });
 module.exports = router;
