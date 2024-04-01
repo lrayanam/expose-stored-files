@@ -1,13 +1,13 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-// const indexRouter = require('./index');
+const indexRouter = require('./index');
 
 
 const app = express();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use("/files", express.static('files'));
+app.use("/stored", express.static('files'));
 
 
 app.use((req, res, next) => {
@@ -22,7 +22,7 @@ app.use((req, res, next) => {
   );
   next();
 });
-// app.use('/stockage-file', indexRouter);
+app.use('/', indexRouter);
 app.use(function(req, res, next) {
     res.status(404).json({name: 'API', version: '1.0', status: 404, message: 'not_found'});
 });
