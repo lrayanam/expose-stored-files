@@ -1,0 +1,28 @@
+{
+  "name": "expose-stored-files",
+  "version": "1.0.0",
+  "description": "Exposing files stored on your server",
+  "main": "server-expose.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lrayanam/expose-stored-files.git"
+  },
+  "keywords": [
+    "Stored",
+    "Files"
+  ],
+  "author": "lram",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lrayanam/expose-stored-files/issues"
+  },
+  "homepage": "https://github.com/lrayanam/expose-stored-files#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}
