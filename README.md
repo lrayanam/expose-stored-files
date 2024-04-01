@@ -7,6 +7,6 @@ I initiated this project to allow users to store and showcase their documents di
 1. Clone the project from GitHub.
 2. Use `npm install` to install dependencies.
 3. Copy the entire folder to your server.
-4. Run the `server-expose.js` file (you can use pm2 to do this).
+4. Run the `server-expose.js` file (you can use [pm2](https://pm2.keymetrics.io/) to do this).
 5. Configure your domain name, if applicable.
 6. You can now display all files present in the "files" directory on your server. Bingo!
